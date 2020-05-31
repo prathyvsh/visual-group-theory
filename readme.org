@@ -1,3 +1,7 @@
 * Visual Group Theory
 
 ** [[./chapter-1.org][Chapter 1 Exercises]]
+
+** Time doing exercises
+
+*** 5:39 PM -- 6:09 PM May 31 2020
