@@ -1,0 +1,37 @@
+* Chapter 1
+
+** 1.1 Place a penny and a nickel side by side on a table or desk. Consider just one action, the action of swapping the places of the two coins. Is this a group?
+
+Swapping two coins is a group since it follows:
+- is a predefined list of actions that never changes.
+- is reversible.
+- is deterministic.
+- Any sequence of consecutive actions is also an action.
+
+** 1.2 Consider the same situation as in Exercise 1.1, but add a dime to the right of the other two coins. The only action is still that of swapping the places of the penny and nickel. Is this a group?
+Adding one more element doesn't change anything to violate any of the rules.
+
+** 1.3 Imagine that you have five marbles in your left pocket. Consider two actions, moving a marble from your left pocket into your right pocket and moving a marble from your right pocket into your left pocket. Is this a group?
+No this is not a group since the marbles are getting exhausted as you move items and it hits an empty collection.
+
+** 1.4 Three walls in your bedroom hold pieces of art, one hung on each wall. You are rearranging them to see which arrangement best suits your taste. You cannot use the fourth wall, because it has a window.
+(a) Count the number of ways there are to rearrange the pictures, as long as only one is hung on each wall.
+(b) Consider two actions: You may swap the art on the left wall with the art on the center wall, and you may swap the art on the center wall with the art on the right wall. Can these two actions alone generate all of the configurations you counted?
+(c) Does part (b) describe a group? If not, what rule or rules were broken?
+(d) Now add a new action, moving all art from the right wall to the center wall, even if this causes there to be more than one piece of art there. Is this new situation a group? If not, what rule or rules were broken?
+
+a) 6 combinations: {A(B,C), B(A,C), C(A,B)} () indicates swappable pairs.
+b) {(abc) => swap(ab);c , (abc) => a;swap(bc)} are the set of actions.
+These can generate:
+First action with input: ABC can generate: i) ABC, ii) BAC
+Second action with input: ABC can generate: ABC, iii) ACB
+Using ii) on second action we can get iv) BCA
+Using iii) on first action we can get v) CAB
+Using iv) on first action gives vi) CBA
+Using v) on second action gives the same.
+Thus it can be seen that all six combinations are exhausted with 2 group actions.
+
+c) Yes part b does describe a group.
+d) Yes this is a new situation as the identity of elements is lost now and all art are grouped on a single wall rather than in the location they used to be.
+Symbolically I think this can be represented as (A)(B)(C) becoming ()(ABC)(). Rather than having a single bracket pair, single element association.
+
